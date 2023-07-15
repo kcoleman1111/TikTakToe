@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 body{
   background-color: rgba(238, 237, 223, 0.844);
 }
@@ -5,6 +6,8 @@ body{
 .header{
   text-align: center;
   margin-bottom: 55px;
+  font-family: "Courgette";
+  font-size: 80px;
 }
 
 /* //top Divs */
@@ -17,12 +20,29 @@ body{
   
 
 }
+.top{
+  text-align: center;
+  font-size: 150px;
+ 
+}
+
+.middle{
+    text-align: center;
+    font-size: 150px;
+}
+
+.bottom{
+  text-align: center;
+  font-size: 150px;
+}
 
 .topLeft{
   width: 200px;
   height: 200px;
   border-right: solid black;
   border-bottom: solid black;
+  border-width: 13px;
+ 
 }
 
 .topMiddle{
@@ -30,6 +50,7 @@ body{
   height: 200px;
   border-right: solid black;
   border-bottom: solid black;
+  border-width: 13px;
   
 }
 
@@ -37,6 +58,7 @@ body{
   width: 200px;
   height: 200px;
   border-bottom: solid black;
+  border-width: 13px;
 }
 
 
@@ -45,6 +67,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
 .middleLeft{
@@ -52,6 +75,8 @@ body{
   height: 200px;
   border-right: solid black;
   border-bottom: solid black;
+  border-width: 13px;
+ 
 }
 
 .middleMiddle{
@@ -59,6 +84,7 @@ body{
   height: 200px;
   border-right: solid black;
   border-bottom: solid black;
+  border-width: 13px;
   
 }
 
@@ -66,6 +92,7 @@ body{
   width: 200px;
   height: 200px;
   border-bottom: solid black;
+  border-width: 13px;
 }
 
 /* Bottom Div */
@@ -75,12 +102,14 @@ body{
   flex-direction: row;
   justify-content: center;
   margin-bottom: 100px;
+
 }
 
 .bottomLeft{
   width: 200px;
   height: 200px;
   border-right: solid black;
+  border-width: 13px;
  
 }
 
@@ -88,6 +117,7 @@ body{
   width: 200px;
   height: 200px;
   border-right: solid black;
+  border-width: 13px;
  
   
 }
@@ -95,5 +125,6 @@ body{
 .bottomRight{
   width: 200px;
   height: 200px;
+  border-width: 13px;
 
 }

@@ -74,11 +74,40 @@ window.addEventListener("DOMContentLoaded" , ()=>{
    const topRow = document.querySelectorAll(".top");
    console.log(topRow)
 
-   topRow.forEach((el)=>{
+    topRow.forEach((el)=>{
     el.addEventListener("click", ()=>{
-      el.innerText= 
+ 
+      
+        el.innerText= "❌";
+    
+
+      })
+
+    })
+    const middleRow = document.querySelectorAll(".middle");
+    middleRow.forEach((el)=>{
+      el.addEventListener("click", ()=>{
+   
+        
+         el.innerText= "❌";
+      
+  
+      })
+  
     })
 
+
+
+     const bottomRow = document.querySelectorAll(".bottom");
+     bottomRow.forEach((el)=>{
+      el.addEventListener("click", ()=>{
+   
+        
+         el.innerText= "❌";
+      
+  
+      })
+  
     })
 
   
