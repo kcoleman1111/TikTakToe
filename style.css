@@ -8,6 +8,45 @@ body{
   margin-bottom: 55px;
   font-family: "Courgette";
   font-size: 80px;
+  text-decoration: underline;
+}
+
+/* player continer */
+#playerContainer{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+
+.player{
+  height:150px;
+  width:300px;
+  border:solid rgb(123, 116, 116);
+  border-width: 4px;
+  text-align: left;
+}
+
+.player1{
+  margin-left: 50px;
+ 
+  
+}
+
+.player2{
+  margin-right: 60px;
+
+}
+.inputBox{
+  margin-top: 10px;
+  margin-left: 10px;
+  
+}
+
+.inputButton{
+  height:20px;
+  width:70px;
+  margin-left: 8px;
 }
 
 /* //top Divs */

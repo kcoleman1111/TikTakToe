@@ -7,6 +7,50 @@ window.addEventListener("DOMContentLoaded" , ()=>{
   header.setAttribute("class", "header")
   header.innerText = "Tik Tak Toe"
   document.body.prepend(header)
+
+
+  //players
+  const playerContainer = document.createElement("div")
+  playerContainer.setAttribute("id","playerContainer");
+  const player1 = document.createElement("div");
+  player1.setAttribute("class" ,"player1 player")
+  const player2 = document.createElement("div")
+  player2.setAttribute("class", "player2 player")
+
+
+  //input box
+  const inputbox1 = document.createElement("input");
+  inputbox1.placeholder="Name";
+  inputbox1.setAttribute("class", "inputBox1 inputBox")
+  player1.appendChild(inputbox1);
+
+  const inputbox2 = document.createElement("input");
+  inputbox2.placeholder="Name";
+  inputbox2.setAttribute("class", "inputBox2 inputBox")
+  player2.appendChild(inputbox2);
+
+  //inputButton 
+  const inputButton1 = document.createElement("button");
+  inputButton1.innerText="Enter"
+  inputButton1.setAttribute("class", "inputButton");
+  inputbox1.insertAdjacentElement("afterend", inputButton1)
+
+
+  const inputButton2 = document.createElement("button");
+  inputButton2.innerText="Enter"
+  inputButton2.setAttribute("class", "inputButton");
+  inputbox2.insertAdjacentElement("afterend", inputButton2)
+
+
+
+  //append players 
+  playerContainer.append(player1, player2)
+
+  //player to body
+  header.insertAdjacentElement("afterend",playerContainer);
+
+ 
+
   //top
   const topLeft= document.createElement("div");
   topLeft.setAttribute("class", "topLeft top");
@@ -71,12 +115,35 @@ window.addEventListener("DOMContentLoaded" , ()=>{
   //WE ARE DONE WITH THE BUILD 
 
 
+
+  //storage
+  
+  function getName(){
+    console.log(inputbox1.value)
+    return inputbox1.value
+  }
+
+   inputbox1.addEventListener("input", getName)
+   const player1Name = getName();
+   localStorage.setItem("player1Name", player1Name);
+
+  
+
+
+
+
+
+
+
+
+
    const topRow = document.querySelectorAll(".top");
-   console.log(topRow)
+  
 
     topRow.forEach((el)=>{
     el.addEventListener("click", ()=>{
- 
+      
+     
       
         el.innerText= "❌";
     
