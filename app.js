@@ -120,6 +120,8 @@ window.addEventListener("DOMContentLoaded" , ()=>{
   const getNameOfPlayer = localStorage.getItem("player1Name");
   if(getNameOfPlayer){
     inputbox1.value = `${getNameOfPlayer}'s Score`;
+  
+
   }
   
   function getName(){
@@ -143,6 +145,7 @@ window.addEventListener("DOMContentLoaded" , ()=>{
    const getNameOfPlayer2 = localStorage.getItem("player2Name");
    if(getNameOfPlayer2){
      inputbox2.value = `${getNameOfPlayer2}'s Score`;
+    
    }
    
    function getName2(){
@@ -215,6 +218,80 @@ window.addEventListener("DOMContentLoaded" , ()=>{
         })
   
     })
+
+
+    const topRowWinner = document.querySelectorAll(".top");
+    let countTopRowX =0;
+    let countTopRowO =0;
+    topRowWinner.forEach((el)=>{
+      el.addEventListener("click",()=>{
+        if(el.innerText==="❌"){
+          countTopRowX+=1;
+         
+        }
+
+        if(el.innerText==="⭕️"){
+          countTopRowO+=1;
+         
+        }
+        if(countTopRowO ===3 || countTopRowX===3){
+          setTimeout(()=>{
+            alert("Winner")
+          },100);
+        }
+         
+      });
+    })
+
+
+    const middleRowWinner = document.querySelectorAll(".middle");
+    let countMiddleRowX =0;
+    let countMiddleRowO =0;
+    middleRowWinner.forEach((el)=>{
+      el.addEventListener("click",()=>{
+        if(el.innerText==="❌"){
+          countMiddleRowX +=1;
+         
+        }
+
+        if(el.innerText==="⭕️"){
+          countMiddleRowO +=1;
+         
+        }
+        if(countMiddleRowO  ===3 || countMiddleRowX ===3){
+          setTimeout(()=>{
+            alert("Winner")
+          },100);
+        }
+         
+      })
+    });
+
+
+      const bottomRowWinner = document.querySelectorAll(".bottom");
+      let countBottomRowX =0;
+      let countBottomRowO =0;
+      bottomRowWinner.forEach((el)=>{
+        el.addEventListener("click",()=>{
+          if(el.innerText==="❌"){
+            countBottomRowX  +=1;
+           
+          }
+  
+          if(el.innerText==="⭕️"){
+            countBottomRowO +=1;
+           
+          }
+          if(countBottomRowO ===3 || countBottomRowX ===3){
+            setTimeout(()=>{
+              alert("Winner")
+            },100);
+          }
+           
+        });
+
+    })
+
 
   
 
