@@ -422,7 +422,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
-  })
+  });
+
+
+  function resetBoard(){
+    const topRow = document.querySelectorAll(".top");
+    topRow.forEach((el)=>{
+      el.innerText=""
+    });
+
+    const middleRow = document.querySelectorAll(".middle");
+    middleRow.forEach((el)=>{
+      el.innerText=""
+    })
+
+
+    const bottomRow = document.querySelectorAll(".middle");
+    middleRow.forEach((el)=>{
+      el.innerText=""
+    })
+
+
+  }
 
 
 
