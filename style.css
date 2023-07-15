@@ -32,6 +32,22 @@ body{
  
   
 }
+.resetButton {
+  width: 172px;
+  height:36px;
+  margin-top: 32px;
+  border:none;
+  background-color: red;
+  color:white;
+  border-radius: 3px;
+  box-shadow: 3px 3px gray;
+}
+
+.resetButton:hover{
+
+  background-color:aliceblue;
+  color:black
+}
 
 .player2{
   margin-right: 60px;
@@ -47,6 +63,10 @@ body{
   height:20px;
   width:70px;
   margin-left: 10px;
+  background-color: red;
+  color:white;
+  border-radius: 3px;
+  box-shadow: 3px 3px gray;
 }
 
 /* //top Divs */

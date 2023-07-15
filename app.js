@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   playerContainer.setAttribute("id", "playerContainer");
   const player1 = document.createElement("div");
   player1.setAttribute("class", "player1 player")
+
   const player2 = document.createElement("div")
   player2.setAttribute("class", "player2 player")
 
@@ -109,7 +110,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+  const resetButton = document.createElement("button");
+  resetButton.setAttribute("class", "resetButton");
+  resetButton.innerText = "Reset";
+  const secondChild = document.querySelector(".player2")
+  playerContainer.insertBefore(resetButton, secondChild);
 
 
   //WE ARE DONE WITH THE BUILD 
@@ -173,27 +178,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //DONE WITH STORAGE AND PLAYER BOARD FOR NOW 
 
-  function resetBoard(){
-    const topRow = document.querySelectorAll(".top");
-    topRow.forEach((el)=>{
-      el.innerText=""
-    });
-
-    const middleRow = document.querySelectorAll(".middle");
-    middleRow.forEach((el)=>{
-      el.innerText=""
-    })
-
-
-    const bottomRow = document.querySelectorAll(".bottom");
-    bottomRow.forEach((el)=>{
-      el.innerText=""
-    })
-
-
-  }
-
-
 
 
   const arr = ["❌", "⭕️", "❌", "⭕️", "❌", "⭕️", "❌", "⭕️", "❌", "⭕️", "❌", "⭕️", "❌", "⭕️", "❌", "⭕️"]
@@ -240,6 +224,9 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
 
+  //setting th baords 
+
+
   const topRowWinner = document.querySelectorAll(".top");
   let countTopRowX = 0;
   let countTopRowO = 0;
@@ -256,9 +243,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countTopRowO === 3 || countTopRowX === 3) {
         setTimeout(() => {
-          count=0
           alert("Winner")
-          resetBoard();
+        
         }, 100);
      
       }
@@ -283,9 +269,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countMiddleRowO === 3 || countMiddleRowX === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -310,9 +295,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countBottomRowO === 3 || countBottomRowX === 3) {
         setTimeout(() => {
-          count=0
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -339,9 +323,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countLeftColO === 3 || countLeftColX === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -366,9 +349,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countMiddleColO === 3 || countMiddleColX === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -393,9 +375,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countRightColO === 3 || countRightColX === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -421,9 +402,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countDiaRightO=== 3 || countDiagLeftX === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -449,9 +429,8 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countDiaLeftO=== 3 || countDiagRightX  === 3) {
         setTimeout(() => {
-          count =0;
           alert("Winner")
-          resetBoard();
+        
         }, 100);
         //empty board function
       }
@@ -459,6 +438,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
   });
+
+
+  const resetButtonFinal = document.querySelector(".resetButton");
+  resetButtonFinal.addEventListener("click", ()=>{
+   
+    window.location.reload
+  })
+
 
 
   
