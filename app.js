@@ -173,6 +173,26 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //DONE WITH STORAGE AND PLAYER BOARD FOR NOW 
 
+  function resetBoard(){
+    const topRow = document.querySelectorAll(".top");
+    topRow.forEach((el)=>{
+      el.innerText=""
+    });
+
+    const middleRow = document.querySelectorAll(".middle");
+    middleRow.forEach((el)=>{
+      el.innerText=""
+    })
+
+
+    const bottomRow = document.querySelectorAll(".bottom");
+    bottomRow.forEach((el)=>{
+      el.innerText=""
+    })
+
+
+  }
+
 
 
 
@@ -237,8 +257,9 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countTopRowO === 3 || countTopRowX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
-        //empty board function
+     
       }
 
     });
@@ -262,6 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countMiddleRowO === 3 || countMiddleRowX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -287,6 +309,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countBottomRowO === 3 || countBottomRowX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -314,6 +337,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countLeftColO === 3 || countLeftColX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -339,6 +363,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countMiddleColO === 3 || countMiddleColX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -364,6 +389,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countRightColO === 3 || countRightColX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -390,6 +416,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countDiaRightO=== 3 || countDiagLeftX === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -416,6 +443,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (countDiaLeftO=== 3 || countDiagRightX  === 3) {
         setTimeout(() => {
           alert("Winner")
+          resetBoard();
         }, 100);
         //empty board function
       }
@@ -425,27 +453,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  function resetBoard(){
-    const topRow = document.querySelectorAll(".top");
-    topRow.forEach((el)=>{
-      el.innerText=""
-    });
-
-    const middleRow = document.querySelectorAll(".middle");
-    middleRow.forEach((el)=>{
-      el.innerText=""
-    })
-
-
-    const bottomRow = document.querySelectorAll(".middle");
-    middleRow.forEach((el)=>{
-      el.innerText=""
-    })
-
-
-  }
-
-
+  
 
 
 
