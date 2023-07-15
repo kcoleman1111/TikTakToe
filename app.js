@@ -117,6 +117,10 @@ window.addEventListener("DOMContentLoaded" , ()=>{
 
 
   //storage
+  const getNameOfPlayer = localStorage.getItem("player1Name");
+  if(getNameOfPlayer){
+    inputbox1.value = `${getNameOfPlayer}'s Score`;
+  }
   
   function getName(){
     console.log(inputbox1.value)
@@ -124,28 +128,61 @@ window.addEventListener("DOMContentLoaded" , ()=>{
   }
 
    inputbox1.addEventListener("input", getName)
-   const player1Name = getName();
-   localStorage.setItem("player1Name", player1Name);
+   
+   inputButton1.addEventListener("click", ()=>{
+     const player1Name = getName();
+     localStorage.setItem("player1Name",player1Name);
+     inputbox1.value = `${player1Name}'s Score`;
+     inputbox1.style.border="none"
+     inputbox1.style.borderBottom="solid black";
+     inputbox1.style.backgroundColor="rgba(238, 237, 223, 0.844)"
+ 
+
+   })
+
+   const getNameOfPlayer2 = localStorage.getItem("player2Name");
+   if(getNameOfPlayer2){
+     inputbox2.value = `${getNameOfPlayer2}'s Score`;
+   }
+   
+   function getName2(){
+     console.log(inputbox2.value)
+     return inputbox2.value
+   }
+ 
+    inputbox2.addEventListener("input", getName2)
+    
+    inputButton2.addEventListener("click", ()=>{
+      const player2Name = getName2();
+      localStorage.setItem("player2Name",player2Name);
+      inputbox2.value = `${player2Name}'s Score`;
+      inputbox2.style.border="none"
+      inputbox2.style.borderBottom="solid black";
+      inputbox2.style.backgroundColor="rgba(238, 237, 223, 0.844)"
+
+ 
+    })
 
   
 
 
 
 
+    //DONE WITH STORAGE AND PLAYER BOARD FOR NOW 
 
 
 
 
-
+    const arr = ["❌", "⭕️", "❌","⭕️","❌", "⭕️", "❌","⭕️","❌", "⭕️", "❌","⭕️","❌", "⭕️", "❌","⭕️"]
    const topRow = document.querySelectorAll(".top");
   
 
     topRow.forEach((el)=>{
     el.addEventListener("click", ()=>{
-      
-     
-      
-        el.innerText= "❌";
+
+      el.innerText= arr[0];
+      arr.shift();
+    
     
 
       })
@@ -154,12 +191,13 @@ window.addEventListener("DOMContentLoaded" , ()=>{
     const middleRow = document.querySelectorAll(".middle");
     middleRow.forEach((el)=>{
       el.addEventListener("click", ()=>{
-   
-        
-         el.innerText= "❌";
+  
+        el.innerText= arr[0];
+        arr.shift();
+      
       
   
-      })
+        })
   
     })
 
@@ -168,12 +206,13 @@ window.addEventListener("DOMContentLoaded" , ()=>{
      const bottomRow = document.querySelectorAll(".bottom");
      bottomRow.forEach((el)=>{
       el.addEventListener("click", ()=>{
-   
-        
-         el.innerText= "❌";
+  
+        el.innerText= arr[0];
+        arr.shift();
+      
       
   
-      })
+        })
   
     })
 

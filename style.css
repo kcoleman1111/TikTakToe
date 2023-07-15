@@ -5,9 +5,9 @@ body{
 
 .header{
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
   font-family: "Courgette";
-  font-size: 80px;
+  font-size: 60px;
   text-decoration: underline;
 }
 
@@ -20,7 +20,7 @@ body{
 }
 
 .player{
-  height:150px;
+  height:100px;
   width:300px;
   border:solid rgb(123, 116, 116);
   border-width: 4px;
@@ -39,14 +39,14 @@ body{
 }
 .inputBox{
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
   
 }
 
 .inputButton{
   height:20px;
   width:70px;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 /* //top Divs */
@@ -61,23 +61,23 @@ body{
 }
 .top{
   text-align: center;
-  font-size: 150px;
+  font-size: 100px;
  
 }
 
 .middle{
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
 }
 
 .bottom{
   text-align: center;
-  font-size: 150px;
+  font-size: 100px;
 }
 
 .topLeft{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-bottom: solid black;
   border-width: 13px;
@@ -85,8 +85,8 @@ body{
 }
 
 .topMiddle{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-bottom: solid black;
   border-width: 13px;
@@ -94,8 +94,8 @@ body{
 }
 
 .topRight{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-bottom: solid black;
   border-width: 13px;
 }
@@ -110,8 +110,8 @@ body{
 }
 
 .middleLeft{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-bottom: solid black;
   border-width: 13px;
@@ -119,8 +119,8 @@ body{
 }
 
 .middleMiddle{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-bottom: solid black;
   border-width: 13px;
@@ -128,8 +128,8 @@ body{
 }
 
 .middleRight{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-bottom: solid black;
   border-width: 13px;
 }
@@ -145,16 +145,16 @@ body{
 }
 
 .bottomLeft{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-width: 13px;
  
 }
 
 .bottomMiddle{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-right: solid black;
   border-width: 13px;
  
@@ -162,8 +162,8 @@ body{
 }
 
 .bottomRight{
-  width: 200px;
-  height: 200px;
+  width: 134px;
+  height: 118px;
   border-width: 13px;
 
 }
