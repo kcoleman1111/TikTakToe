@@ -256,6 +256,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countTopRowO === 3 || countTopRowX === 3) {
         setTimeout(() => {
+          count=0
           alert("Winner")
           resetBoard();
         }, 100);
@@ -282,6 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countMiddleRowO === 3 || countMiddleRowX === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
@@ -308,6 +310,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countBottomRowO === 3 || countBottomRowX === 3) {
         setTimeout(() => {
+          count=0
           alert("Winner")
           resetBoard();
         }, 100);
@@ -336,6 +339,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countLeftColO === 3 || countLeftColX === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
@@ -362,6 +366,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countMiddleColO === 3 || countMiddleColX === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
@@ -388,6 +393,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countRightColO === 3 || countRightColX === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
@@ -415,6 +421,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countDiaRightO=== 3 || countDiagLeftX === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
@@ -442,6 +449,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
       if (countDiaLeftO=== 3 || countDiagRightX  === 3) {
         setTimeout(() => {
+          count =0;
           alert("Winner")
           resetBoard();
         }, 100);
