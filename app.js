@@ -443,7 +443,10 @@ window.addEventListener("DOMContentLoaded", () => {
   const resetButtonFinal = document.querySelector(".resetButton");
   resetButtonFinal.addEventListener("click", ()=>{
    
-    window.location.reload
+    window.location.reload();
+    localStorage.removeItem("player1Name")
+    localStorage.removeItem("player2Name")
+   
   })
 
 
