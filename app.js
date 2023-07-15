@@ -37,6 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
   inputbox1.insertAdjacentElement("afterend", inputButton1)
 
 
+
+
   const inputButton2 = document.createElement("button");
   inputButton2.innerText = "Enter"
   inputButton2.setAttribute("class", "inputButton");
